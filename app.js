@@ -103,8 +103,7 @@ function buildChannelData(parsedBody) {
 
 function buildFollowerData(parsedBody) {
   return parsedBody.follows.reverse().map(function(obj, index) {
-    dateArray = obj.created_at.slice(0,10).split('-');
-    date = dateArray[0] + '-' + dateArray[1] + '-' + dateArray[2];
+    date = obj.created_at.slice(0,10);
     return {'username': obj.user.display_name, 'follow_order': index,
     'follow_date': date};
   });
