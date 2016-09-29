@@ -1,0 +1,23 @@
+{
+  "name": "geckoboard-twitch-integration",
+  "version": "1.0.0",
+  "description": "A geckoboard integration to display your twitch stats.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/OMGDuke/geckoboard-twitch-integration.git"
+  },
+  "author": "Alex Robertson (alex@omgduke.com)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/OMGDuke/geckoboard-twitch-integration/issues"
+  },
+  "homepage": "https://github.com/OMGDuke/geckoboard-twitch-integration#readme",
+  "dependencies": {
+    "dotenv": "^2.0.0",
+    "geckoboard": "^1.0.0"
+  }
+}
