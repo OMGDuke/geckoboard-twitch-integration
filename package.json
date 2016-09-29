@@ -18,6 +18,7 @@
   "homepage": "https://github.com/OMGDuke/geckoboard-twitch-integration#readme",
   "dependencies": {
     "dotenv": "^2.0.0",
-    "geckoboard": "^1.0.0"
+    "geckoboard": "^1.0.0",
+    "request-promise": "^4.1.1"
   }
 }
