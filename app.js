@@ -3,8 +3,7 @@ var rp = require('request-promise');
 
 var channelData = 'https://api.twitch.tv/kraken/channels/' +
   process.env.TWITCH_USERNAME;
-var followerData = 'https://api.twitch.tv/kraken/channels/' +
-  process.env.TWITCH_USERNAME + '/follows?limit=100';
+var followerData = '/follows?limit=100';
 var twitchClientId = process.env.TWITCH_CLIENT_ID;
 
 var API_KEY = process.env.GECKO_API;
@@ -79,7 +78,7 @@ gb.datasets.findOrCreate(
     }
 
     setInterval(function() {
-      rp(returnOptions(followerData, twitchClientId))
+      rp(returnOptions(channelData + followerData, twitchClientId))
       .then(function (parsedBody){
         parsedFollowerData = buildFollowerData(parsedBody);
         dataset.put(
